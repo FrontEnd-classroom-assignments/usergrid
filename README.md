@@ -1,54 +1,21 @@
-# React + TypeScript + Vite
+# User Grid
+Build a responsive React application that fetches a list of users from a public API and displays them using Material UI components. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Step 1: Fetch Data
+Use the endpoint https://reqres.in/api/users to fetch user data. You have to get a free API key from [Reqres.in](https://reqres.in/) website to access the REST API.
 
-Currently, two official plugins are available:
+Handle loading and error states appropriately.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Step 2: Display Users
+Use Material UI’s Card component to display each user. Read the Card component documentation in https://mui.com/material-ui/react-card/.
 
-## Expanding the ESLint configuration
+Each card should show:
+- User’s avatar
+- Full name
+- Email address
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Arrange the cards in a responsive grid layout using Material UI’s Grid system. Read the Grid component documentation in https://mui.com/material-ui/react-grid/.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Example output:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+<img src="./src/assets/usergrid.png" alt="User Grid" style="width: 50%;" />
