@@ -1,11 +1,11 @@
-# Käyttäjäruudukko
+# Käyttäjät
 
 Luo responsiivinen React-sovellus, joka hakee käyttäjälistan julkisesta API-rajapinnasta ja esittää käyttäjät Material UI -komponenttien avulla.
 
 ## Vaihe 1: Datan haku
-Käytä päätepistettä https://reqres.in/api/users hakeaksesi käyttäjätiedot. Sinun tulee hankkia ilmainen API-avain [Reqres.in](https://reqres.in/) -sivustolta käyttääksesi REST API:a.
+Käytä osoitetta https://reqres.in/api/users hakeaksesi käyttäjätiedot. Sinun tulee hankkia ilmainen API-avain [Reqres.in](https://reqres.in/) -sivustolta käyttääksesi REST API:a.
 
-Käsittele lataus- ja virhetilat asianmukaisesti.
+Käsittele lataus- ja virhetilanteet asianmukaisesti.
 
 ## Vaihe 2: Käyttäjien näyttäminen
 Käytä Material UI:n Card-komponenttia jokaisen käyttäjän esittämiseen. Lue Card-komponentin dokumentaatio osoitteesta https://mui.com/material-ui/react-card/.
