@@ -1,6 +1,6 @@
 [Suomenkielinen tehtävänanto (README.fi.md)](README.fi.md)
 
-# User Grid
+# User Grid (3 points)
 Build a responsive React application that fetches a list of users from a public API and displays them using Material UI components. 
 
 ## Step 1: Fetch Data
